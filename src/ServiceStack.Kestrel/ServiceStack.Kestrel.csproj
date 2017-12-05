@@ -2,8 +2,9 @@
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
-    <AssemblyName>ServiceStack.Kestrel</AssemblyName>
-    <PackageId>ServiceStack.Kestrel</PackageId>
+    <AssemblyName>FOSS.ServiceStack.Kestrel.Core</AssemblyName>
+    <PackageId>FOSS.ServiceStack.Kestrel.Core</PackageId>
+    <PackageVersion>2.0.0</PackageVersion>
     <GenerateAssemblyTitleAttribute>false</GenerateAssemblyTitleAttribute>
     <GenerateAssemblyDescriptionAttribute>false</GenerateAssemblyDescriptionAttribute>
     <GenerateAssemblyConfigurationAttribute>false</GenerateAssemblyConfigurationAttribute>
@@ -21,7 +22,8 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\ServiceStack.Interfaces\ServiceStack.Interfaces.csproj"/>
+    <ProjectReference Include="..\..\..\ServiceStack.Text\src\ServiceStack.Text\ServiceStack.Text.csproj" />
+    <ProjectReference Include="..\ServiceStack.Interfaces\ServiceStack.Interfaces.csproj" />
     <ProjectReference Include="..\ServiceStack.Common\ServiceStack.Common.csproj" />
     <ProjectReference Include="..\ServiceStack.Client\ServiceStack.Client.csproj" />
     <ProjectReference Include="..\ServiceStack\ServiceStack.csproj" />
@@ -36,7 +38,6 @@
     <PackageReference Include="Microsoft.Extensions.Logging.Abstractions" Version="2.0.0" />
     <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="2.0.0" />
     <PackageReference Include="Microsoft.Extensions.Primitives" Version="2.0.0" />
-    <Reference Include="..\..\lib\netstandard2.0\ServiceStack.Text.dll" />
-  </ItemGroup>
+   </ItemGroup>
 
 </Project>
